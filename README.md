@@ -1,4 +1,9 @@
 # DASHBOARD-CHARTSJS-MERN
+![MongoDB Version](https://img.shields.io/badge/MongoDB-v4.0%20or%20later-green)
+![Express.js Version](https://img.shields.io/badge/Express.js-%5E4.17.1-blue)
+![React.js Version](https://img.shields.io/badge/React.js-v17.0.2-blue)
+![Node.js Version](https://img.shields.io/badge/Node.js-v14.0.0%20or%20later-green)
+![Chart.js Version](https://img.shields.io/badge/Chart.js-v4.4.1-red)
 
 
 ![image](https://github.com/ankit00010/DASHBOARD-CHARTSJS-MERN/assets/111192702/4f9ed7e6-05f3-46f2-a3cc-e0945f326c5c)
