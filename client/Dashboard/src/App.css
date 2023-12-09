@@ -1,0 +1,244 @@
+/* Resetting some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d2634;
+    color: #9e9ea4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* App.css */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styling for various icons */
+.icon {
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 20px;
+}
+
+.icon_header {
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 26px;
+}
+
+/* Margin for icons */
+.icon,
+.icon_header {
+    margin-right: 5px;
+}
+
+/* Grid container for layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+        'sidebar header header header'
+        'sidebar main main main';
+    height: 100vh;
+}
+
+/* Header styling */
+.header {
+    grid-area: header;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+
+/* Styling for menu icon (probably for mobile view) */
+.menu-icon {
+    display: none;
+}
+
+/* Sidebar styling */
+#sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #263043;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
+}
+
+.sidebar-title>span {
+    display: none;
+}
+
+.sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidebar-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar-list-item {
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+}
+
+/* Hover effect on sidebar list items */
+.sidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.sidebar-list-item>a {
+    text-decoration: none;
+    color: #9e9ea4;
+}
+
+/* Responsive display for sidebar */
+.sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
+}
+
+/* Main container styling */
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the charts section */
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 60px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Responsive styling for different screen sizes */
+@media screen and (max-width: 992px) {
+
+    /* Adjusting grid for smaller screens */
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 3fr;
+        grid-template-areas:
+            'header'
+            'main';
+    }
+
+    /* Hiding sidebar for smaller screens */
+    #sidebar {
+        display: none;
+    }
+
+    /* Displaying menu icon for smaller screens */
+    .menu-icon {
+        display: inline;
+    }
+
+    /* Displaying the sidebar title for smaller screens */
+    .sidebar-title>span {
+        display: inline;
+    }
+
+    /* Adjusting chart grid for smaller screens */
+    .charts {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+}
+
+/* Responsive styling for medium screens (<= 1250px) */
+@media screen and (max-width: 1250px) {
+    .charts {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+}
+
+/* Responsive styling for extra small screens (<= 576px) */
+@media screen and (max-width: 576px) {
+
+    /* Hiding left header for extra small screens */
+    .header-left {
+        display: none;
+    }
+}
+
+/* Styling for the topic chart */
+.topic-chart {
+    width: 600px;
+    word-wrap: break-word;
+}
+
+/* Styling for the topic container */
+.topic-container {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+}
+
+/* Styling for the topic header */
+.topic-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for the article number input */
+.article-number-input {
+    margin-bottom: 10px;
+}
+
+/* Styling for article details */
+.article-details {
+    margin-top: 20px;
+}
+
+/* Styling for the article details list */
+.article-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for the article details list items */
+.article-details li {
+    margin-bottom: 8px;
+}
+
+/* Styling for strong elements within list items */
+.article-details li strong {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Styling for anchor elements within article details */
+.article-details a {
+    color: #0066cc;
+}
