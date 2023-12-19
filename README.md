@@ -37,7 +37,7 @@ This project is a dashboard application built using the MERN (MongoDB, Express.j
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/ankit00010/DASHBOARD-CHARTSJS-MERN.git
+       https://github.com/ankit00010/DASHBOARD-CHARTSJS-MERN.git
 
 
 
